@@ -1,0 +1,36 @@
+.redBackgrd{
+    background-color: lightcoral;
+}
+.blueBackgrd{
+    background-color: lightblue;
+}
+.yellowBackgrd{
+    background-color: yellow;
+}
+.uniformHgt{
+    height: 1600px;
+}
+body{
+    background-color: violet;
+}
+@media only screen and (max-width: 600px) {
+    body {
+        background-color: lightblue;
+    }
+}
+#defaultBtnHoldr{
+    display: none;
+}
+#addBtnHoldr{
+    margin-top: 5px;
+}
+.reducedHdg{
+    width: 70%;
+}
+.logoutBtnHoldr{
+    margin-top: 8px;
+    margin-left: 20px;
+}
+.mainHdg{
+    margin-left: 60px;
+}

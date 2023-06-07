@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Bootstrap Demo Project</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="css/bootstrap.css"/>
+        <link rel="stylesheet" href="css/bootstrap-grid.css"/>
+        <link rel="stylesheet" href="css/style.css"/>
+    </head>
+    <body>
+        <div class="jumbotron text-center">
+            <div class="d-flex">
+                <h1 class="mainHdg">My First Bootstrap Page</h1>
+                <div class="logoutBtnHoldr">
+                    <button class="btn btn-primary" type="button" onclick="logout()">Logout</button>
+                </div>
+            </div>
+            <p>Resize this responsive page to see the effect!</p>
+        </div>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-3 col-sm-3 redBackgrd uniformHgt">
+                    <h3 id="leftPaneHdr">This is left pane</h3>
+                    <p>Lorem ipsum dolor..</p>
+                    <div id="editBtnHoldr">
+                        <button class="btn btn-primary" type="button" onclick="edit_left_pane_hdr()">Change Left Pane Header</button>
+                    </div>
+                    <div id="defaultBtnHoldr">
+                        <button class="btn btn-primary" type="button" onclick="returnToDefalt()">Return to Default</button>
+                    </div>
+                </div>
+                <div class="col-lg-6 col-sm-6 blueBackgrd uniformHgt">
+                    <h3  id="mainAreaHdr">This is main area</h3>
+                    <p>Lorem ipsum dolor..</p>
+                    <h4>Basic Calculator</h4>
+                    <div class="form-group">
+                        <label for="fNo">First Number</label>
+                        <input type="number" class="form-control" id="fNo" name="fNo">
+                    </div>
+                    <div class="form-group">
+                        <label for="sNo">Second Number</label>
+                        <input type="number" class="form-control" id="sNo" name="sNo">
+                    </div>
+                    <div id="addBtnHoldr" class="d-flex">
+                        <button class="btn btn-primary m-1" type="button" onclick="doAddition()">Add Values</button>
+                        <button class="btn btn-primary m-1" type="button" onclick="doSubtraction()">Subtract Values</button>
+                        <button class="btn btn-primary m-1" type="button" onclick="doMultiplication()">Multiply Values</button>
+                        <button class="btn btn-primary m-1" type="button" onclick="doDivision()">Divide Values</button>
+                    </div>
+                    <div class="d-flex">
+                        <button class="btn btn-primary m-1" type="button" onclick="printString()">Print a String</button>
+                        <button class="btn btn-primary m-1" type="button" onclick="testEquality()">Test Equality</button>
+                        <button class="btn btn-primary m-1" type="button" onclick="convertString()">Convert String</button>
+                        <button class="btn btn-primary m-1" type="button" onclick="concatString()">Concat String</button>
+                    </div>
+                    <div class="d-flex">
+                        <button class="btn btn-primary m-1" type="button" onclick="printPadded()">Print Padded</button>
+                        <button class="btn btn-primary m-1" type="button" onclick="printChar()">Print Character</button>
+                        <button class="btn btn-primary m-1" type="button" onclick="printUnicodeChar()">Print Unicode Character</button>
+                        <button class="btn btn-primary m-1" type="button" onclick="printSplit()">Print Split String</button>
+                    </div>
+                    <div class="d-flex">
+                        <button class="btn btn-primary m-1" type="button" onclick="document.getElementById('resultt').innerHTML = Date()">The time is?</button>
+                        <button class="btn btn-primary m-1" type="button" onclick="this.innerHTML = Date()">The Now time is?</button>
+                        <button class="btn btn-primary m-1" type="button" onclick="displayDate()">The present time is?</button>
+                        <button class="btn btn-primary m-1" type="button" onclick="demoArray()">Demo Array</button>
+                    </div>
+                    <div class="d-flex">
+                        <button class="btn btn-primary m-1" type="button" onclick="printArray()">Print Array</button>
+                        <button class="btn btn-primary m-1" type="button" onclick="printObject()">Print Object</button>
+                        <button class="btn btn-primary m-1" type="button" onclick="arrayProperties()">Array Properties</button>
+                        <button class="btn btn-primary m-1" type="button" onclick="sortArray()">Sort Array</button>
+                    </div>
+                    <div class="d-flex">
+                        <button class="btn btn-primary m-1" type="button" onclick="loopArray()">Loop Array</button>
+                        <button class="btn btn-primary m-1" type="button" onclick="printArrayElems()">Print Array Elements</button>
+                        <button class="btn btn-primary m-1" type="button" onclick="verifyArrayType()">Verify Array Type</button>
+                        <button class="btn btn-primary m-1" type="button" onclick="reverseArray()">Reverse Array</button>
+                    </div>
+                    <div class="d-flex">
+                        <button class="btn btn-primary m-1" type="button" onclick="sortNosDesc()">Sort Numbers Descending</button>
+                        <button class="btn btn-primary m-1" type="button" onclick="sortArrRandom()">Sort Numbers Randomly</button>
+                        <button class="btn btn-primary m-1" type="button" onclick="maxMin()">Max-Min Values</button>
+                        <button class="btn btn-primary m-1" type="button" onclick="iterateArray()">Iterate Array</button>
+                    </div>
+                    <div class="d-flex">
+                        <button class="btn btn-primary m-1" type="button" onclick="mapArray()">Map Array</button>
+                        <button class="btn btn-primary m-1" type="button" onclick="filterArray()">Filter Array</button>
+                        <button class="btn btn-primary m-1" type="button" onclick="reduceArray()">Reduce Array</button>
+                        <button class="btn btn-primary m-1" type="button" onclick="everyArray()">Every Array</button>
+                    </div>
+                    <div class="d-flex">
+                        <button class="btn btn-primary m-1" type="button" onclick="someArray()">Some Array</button>
+                        <button class="btn btn-primary m-1" type="button" onclick="getIndex()">Get Index</button>
+                        <button class="btn btn-primary m-1" type="button" onclick="printDate()">Print Date</button>
+                        <button class="btn btn-primary m-1" type="button" onclick="printCustomDate()">Print Custom Date</button>
+                    </div>
+                    <div class="d-flex">
+                        <button class="btn btn-primary m-1" type="button" onclick="printPreviousCentury()">Previous Century Date</button>
+                        <button class="btn btn-primary m-1" type="button" onclick="printDateMillsecs()">Date Millsecs</button>
+                        <button class="btn btn-primary m-1" type="button" onclick="printDateToString()">Date toString</button>
+                        <button class="btn btn-primary m-1" type="button" onclick="printISODate()">ISO Date</button>
+                    </div>
+                    <div class="d-flex">
+                        <button class="btn btn-primary m-1" type="button" onclick="printLongDate()">Long Date</button>
+                        <button class="btn btn-primary m-1" type="button" onclick="printParseDate()">Parse Date</button>
+                    </div>
+                    <div id="resultt" class="container p-3 my-3 border"></div>
+                    <div class="container p-3 my-3 bg-dark text-white"></div>
+                    <div class="container p-3 my-3 bg-primary text-white"></div>
+                </div>
+                <div class="col-lg-3 col-sm-3 yellowBackgrd uniformHgt">
+                    <h3  id="rightPaneHdr">This is right pane</h3>
+                    <p>Lorem ipsum dolor..</p>
+                </div>
+            </div>
+        </div>
+        <script>
+
+        </script>
+        <!-- jQuery library -->
+        <script src="js/jquery-3.6.4.js"></script>
+        <!-- Popper JS -->
+        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+        <!-- Latest compiled JavaScript -->
+        <script src="js/bootstrap.min.js"></script>
+        <script src="js/myScript.js"></script>
+    </body>
+</html>

@@ -65,6 +65,89 @@ function printDate() {
     alert("The Date now is " + d);
     document.getElementById("resultt").innerHTML = d;
 }
+function printMathProperties() {
+    //document.getElementById("resultt").innerHTML = Math.E;
+    //document.getElementById("resultt").innerHTML = Math.PI;
+    //document.getElementById("resultt").innerHTML = Math.SQRT2;
+    document.getElementById("resultt").innerHTML = Math.LN10;
+    //document.getElementById("resultt").innerHTML = Math.sqrt(9);
+}
+function calcSqRt() {
+    var numb = document.getElementById("noToSq").value;
+    var convNumb = Number(numb);
+    document.getElementById("resultt").innerHTML = Math.sqrt(convNumb);
+}
+function mathMethods() {
+    var numb = document.getElementById("noToSq").value;
+    var convNumb = Number(numb);
+    //document.getElementById("resultt").innerHTML = Math.round(convNumb);
+    //document.getElementById("resultt").innerHTML = Math.ceil(convNumb);
+    //document.getElementById("resultt").innerHTML = Math.floor(convNumb);
+    //document.getElementById("resultt").innerHTML = Math.trunc(convNumb);
+    //document.getElementById("resultt").innerHTML = Math.sign(convNumb);
+    //document.getElementById("resultt").innerHTML = Math.pow(convNumb, 2);
+    //document.getElementById("resultt").innerHTML = Math.abs(convNumb);
+    //document.getElementById("resultt").innerHTML = Math.min(0, 150, 30, 20, -8, -200);
+    //document.getElementById("resultt").innerHTML = Math.max(0, 150, 30, 20, -8, -200);
+    //document.getElementById("resultt").innerHTML = Math.random();
+    //document.getElementById("resultt").innerHTML = Math.log(10);
+    document.getElementById("resultt").innerHTML = Math.log10(1000);
+}
+function printBooleans() {
+    var theBool = Boolean(10 == 10);
+    alert("The Boolean value for (10 == 10) is " + theBool);
+}
+function validateAge() {
+    var age = document.getElementById("age").value;
+    var convAge = Number(age);
+    if (convAge < 18) {
+        alert("You are too young to buy alcohol, get pure water instead!");
+    } else if (convAge >= 18 && convAge < 25) {
+        alert("You may buy some lager beer, however, drink responsibly");
+    } else if (convAge >= 25 && convAge < 35) {
+        alert("You may buy some red wine, however, drink responsibly");
+    } else {
+        alert("You may buy some Azul, however, drink responsibly");
+    }
+//    let voteable = (convAge < 18) ? "Too young to vote" : "You have to vote Asiwaju!";
+//    alert(voteable);
+}
+function testChainingOperator() {
+    // Create an object:
+    const car = {type: "Fiat", model: "500", color: "white"};
+    // Ask for car name:
+    //document.getElementById("resultt").innerHTML = car?.name;
+}
+function printToday() {
+    var day;
+    switch (new Date().getDay()) {
+        case 0:
+            day = "Sunday";
+            break;
+        case 1:
+            day = "Monday";
+            break;
+        case 2:
+            day = "Tuesday";
+            break;
+        case 3:
+            day = "Wednesday";
+            break;
+        case 4:
+            day = "Thursday";
+            break;
+        case 5:
+            day = "Friday";
+            break;
+        case 6:
+            day = "Saturday";
+            break;
+//        default:
+//            text = "Looking forward to the Weekend";
+            //break;
+    }
+    document.getElementById("resultt").innerHTML = day;
+}
 function printLongDate() {
     //const d = new Date("Mar 25 2015");
     const d = new Date("25 Mar 2015");
@@ -350,13 +433,17 @@ function displayDate() {
     document.getElementById('resultt').innerHTML = Date();
 }
 function testEquality() {
-    let x = "John";
-    let y = new String("John");
-    alert(x == y);
-    alert(x == y);
-    alert(x === y);
-    alert(x === y);
-    alert(x === y);
+//    let x = "John";
+//    let y = new String("John");
+//    alert(x == y);
+//    alert(x == y);
+//    alert(x === y);
+//    alert(x === y);
+//    alert(x === y);
+    let a = "350";
+    let b = 350;
+    console.log(a == b);
+    console.log(a === b);
 }
 function login() {
     //alert('it is about to load main content');

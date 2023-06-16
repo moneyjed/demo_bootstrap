@@ -255,6 +255,75 @@ function reverseArray() {
     var reveresedArr = fruits.reverse();
     alert("Reveresed array is " + reveresedArr);
 }
+function printLoop() {
+    var fruits = ["Banana", "Orange", "Apple", "Mango", "Sherry", "Guava"];
+    var text = "";
+    /*text += fruits[0] + "\n";
+     text += fruits[1] + "\n";
+     text += fruits[2] + "\n";
+     text += fruits[3] + "\n";
+     text += fruits[4] + "\n";
+     text += fruits[5] + "\n";*/
+    /*for (let i = 0; i < fruits.length; i++) {
+     text += fruits[i] + "\n";
+     alert(text);
+     }*/
+    /*let i = 0;
+     while (i < fruits.length) {
+     text += fruits[i] + "\n";
+     alert("Here is Iteration: " + (i + 1));
+     alert(text);
+     i++;
+     }*/
+    let i = 0;
+    do {
+        text += fruits[i] + "\n";
+        alert("Here is Iteration: " + (i + 1) + " in Do-While");
+        alert(text);
+        i++;
+    } while (i < fruits.length);
+    alert(text);
+}
+function printLoopBreak() {
+    var fruits = ["Banana", "Orange", "Apple", "Mango", "Sherry", "Guava"];
+    var text = "";
+    let i = 0;
+    do {
+        if (i === 3) {
+            alert("Break is about to occur in the Loop");
+            break;
+        }
+        text += fruits[i] + "\n";
+        alert("Here is Iteration: " + (i + 1) + " in Do-While");
+        alert(text);
+        i++;
+    } while (i < fruits.length);
+    alert(text);
+}
+function printLoopContinue() {
+    var fruits = ["Banana", "Orange", "Apple", "Mango", "Sherry", "Guava"];
+    var text = "";
+    for (let i = 0; i < fruits.length; i++) {
+        if (i === 3) {
+            alert("The System is about to skip Iteration: " + (i + 1) + " in the Loop");
+            continue;
+        }
+        text += fruits[i] + "\n";
+        alert(text);
+    }
+    /*let i = 0;
+     do {
+     if (i === 3) {
+     alert("The System is about to skip Iteration: " + (i + 1) + " in Do-While");
+     continue;
+     }
+     text += fruits[i] + "\n";
+     alert("Here is Iteration: " + (i + 1) + " in Do-While");
+     alert(text);
+     i++;
+     } while (i < fruits.length);*/
+    alert(text);
+}
 function sortArray() {
     //const cars = new Array("Saab", "Volvo", "BMW", "Opel", "Lexus", "Honda");
     //document.getElementById("resultt").innerHTML = cars.sort();
